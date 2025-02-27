@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+    <link rel="icon" href="./images/icon.jpg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        * button:hover {
+            opacity: 0.7;
+            
+        }
+
+
+        #poster_card {
+            background-color: #FFB65C;
+        }
+
+        #footer_container {
+            background-color: #006D6A;
+        }
+
+        body, html {
+    overflow-x: hidden;
+}
+#newarrival_section img:hover{opacity: 0.8;}
+#mostwanted_section img:hover{opacity: 0.8;}
+
+
+       
+    </style>
+
+
+
+
+    <!-- Header-->
+     
+    <div id="header" class= "sm:text-sm space-x-2 bg-black text-white  md:text-2xl flex justify-center sticky top-0 z-20">
+        <h1 >Sign up and <strong>Get 20% OFF</strong> for your first order </h1>
+        <button id="headerbutton" class="ml-32 text-md hover:bg-white hover:text-black"> X </button>
+
+    </div>
+
+
+        <!-- Navigation bar-->
+        <section id="nav" class="flex justify-between p-5 text-2xl text-gray-700 ">
+
+            <div id="nav1" class="text-md md:text-3xl text-black ">
+                <h1 > <strong> Nostra</strong></h1>
+            </div>
+            <svg id="listbutton" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="w-10 h-10 md:hidden"  fill="currentColor" class="size-4"  >
+                <path d="M3 4.75a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6.25 3a.75.75 0 0 0 0 1.5h7a.75.75 0 0 0 0-1.5h-7ZM6.25 7.25a.75.75 0 0 0 0 1.5h7a.75.75 0 0 0 0-1.5h-7ZM6.25 11.5a.75.75 0 0 0 0 1.5h7a.75.75 0 0 0 0-1.5h-7ZM4 12.25a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM3 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
+            </svg>
+           
+            <div id="smallscreennav" class=" hidden sm:grid grid-flow-row mt-4 text-lg  md:hidden">
+
+                <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/index.html">Home </a></p>
+                <p id="scrolltonewarrival"  class=" hover:text-yellow-600"><a href=#>New Arrival </a></p>
+                <p id="scrolltomostwanted" class=" hover:text-yellow-600"><a href=#>Most Wanted </a></p>
+                <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/collection.html">Collection </a></p>
+                <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/contactpage.html">Contact Us </a></p>
+            </div>
+            
+
+            <div id="nav2" class=" hidden  justify-end gap-14  lg:grid grid-flow-col">
+
+                <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/index.html">Home </a></p>
+                <p id="scrolltonewarrival2"  class=" hover:text-yellow-600"><a href=#>New Arrival </a></p>
+                <p id="scrolltomostwanted2" class=" hover:text-yellow-600"><a href=#>Most Wanted </a></p>
+                <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/collection.html">Collection </a></p>
+                <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/contactpage.html">Contact Us </a></p>
+
+            </div>
+        </section>  
+
+
+<!-- Advertisement section-->
+<section id="ad" class="relative   mx-auto">
+    <!-- Image Container (Carousel) -->
+    <div id="adimage" class="relative flex overflow-hidden">
+        <img class="w-1/3 transition-all duration-500 ease-in-out" src="./images/ad1.jpg" alt="ad1">
+        <img class="w-1/3 transition-all duration-500 ease-in-out" src="./images/ad2.jpg" alt="ad2">
+        <img class="w-1/3 transition-all duration-500 ease-in-out" src="./images/ad3.jpg" alt="ad3">
+        <img class="hidden w-1/3 transition-all duration-500 ease-in-out" src="./images/mostwanted2.jpg" alt="ad4">
+        <img class="hidden w-1/3 transition-all duration-500 ease-in-out" src="./images/newarrival3.jpg" alt="ad5">
+    </div>
+
+    <!-- Text Overlay -->
+    <div id="adtext" class="absolute inset-0 flex justify-between items-center text-center bg-black bg-opacity-40">
+        <!-- Left Button -->
+        <button id="prevBtn" class="p-3 text-yellow-600 bg-white rounded-full shadow-lg">
+            <i class="fa-solid fa-chevron-left text-2xl"></i>
+        </button>
+
+        <!-- Text Content -->
+        <div class="text-center text-white">
+            <h1 class="hidden md:block text-4xl font-bold text-yellow-600">Level up your style with our</h1>
+            <p class="hidden md:block text-2xl text-yellow-600">Summer collections</p>
+            <button class="bg-white text-yellow-600 px-4 py-2 mt-4 font-semibold rounded-lg">
+                Shop Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <!-- Right Button -->
+        <button id="nextBtn" class="p-3 text-yellow-600 bg-white rounded-full shadow-lg">
+            <i class="fa-solid fa-chevron-right text-2xl"></i>
+        </button>
+    </div>
+</section>
+
+
+    <!--Brands-->
+
+    <section id="brandsection">
+        <h1 class="text-2xl md:text-3xl text-black pl-5 mt-10 "> <strong>Brands </strong></h1>
+
+        <div id="brandcontainer" class="grid grid-cols-6 mt-10 m-5 border border-black  ">
+
+            <div id="logo1" class="grid grid-rows-2 p-5 grid-flow-row justify-center place-items-center mt-5">
+                <img class="w-14 h-14" src="./images/logo1.jpg" alt="logo1">
+                <p> River Island</p>
+            </div>
+            <div id="logo2" class="grid grid-rows-2 p-5 grid-flow-row justify-center place-items-center mt-5">
+                <img class="w-14 h-14" src="./images/logo2.jpg" alt="logo2">
+                <p> Next </p>
+            </div>
+            <div id="logo3" class="grid grid-rows-2 p-5 grid-flow-row justify-center  place-items-center mt-5">
+                <img class="w-14 h-14" src="./images/logo3.jpg" alt="logo3">
+                <p> Chanel</p>
+            </div>
+            <div id="logo4" class="grid grid-rows-2 p-5 grid-flow-row justify-center place-items-center mt-5">
+                <img class="w-14 h-14" src="./images/logo4.jpg" alt="logo4">
+                <p> Christian Dior</p>
+            </div>
+            <div id="logo5" class="grid grid-rows-2 p-5 grid-flow-row justify-center place-items-center mt-5">
+                <img class="w-14 h-14" src="./images/logo5.jpg" alt="logo5">
+                <p> Louis Vuitton</p>
+            </div>
+            <div id="logo6" class="grid grid-rows-2 p-5 grid-flow-row justify-center place-items-center mt-5 ">
+                <img class="w-14 h-14" src="./images/logo6.jpg" alt="logo6">
+                <p> Hermes Paris</p>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+    <!--Customer Experience-->
+
+
+    <section id="cusexp_section">
+
+        <div id="cusexp_title" class="space-x-2 space-y-2 md:grid grid-cols-2 mt-10 ml-5">
+            <h1 class="text-2xl font-bold"> We Provide Best Customer Experiences</h1>
+            <p class=" md:text-xl ml-56 text-gray-700"> || Crafting an exceptional client shopping experience</p>
+        </div>
+
+
+        <div id="cusexp_desc" class=" grid grid-flow-col items-stretch  md:grid-cols-4  gap-5 text-center p-5">
+
+            <div id="cusexp_desc1" class="bg-gray-300 p-2 ">
+                <p class="justify-center"><i class="fa-solid fa-circle-check" style="color: #000000;"></i></p>
+                <h1 class="text-xl font-bold "> Original Products</h1>
+                <p> we pride ourselves on offering only genuine, original products from the world's leading brands.
+                    Every item is carefully selected for its authenticity, quality, and performance.
+
+                </p>
+            </div>
+            <div id="cusexp_desc1" class="bg-gray-300 p-2 ">
+                <p class="justify-center"><i class="fa-solid fa-face-smile" style="color: #000000;"></i></p>
+                <h1 class="text-xl font-bold "> Satisfaction Guarantee </h1>
+                <p> With top-quality branded products, secure shopping, and reliable service, we’re here to ensure
+                    that every experience is nothing short of exceptional. Your satisfaction is our promise
+
+                </p>
+            </div>
+            <div id="cusexp_desc1" class="bg-gray-300 p-2 ">
+                <p class="justify-center"><i class="fa-solid fa-broom" style="color: #000000;"></i></p>
+                <h1 class="text-xl font-bold "> New Arrival Everyday</h1>
+                <p> Don’t miss out – check back often for fresh styles.
+                    With our curated collection of new arrivals, you're always just a click away from the latest and
+                    greatest products!
+
+                </p>
+            </div>
+            <div id="cusexp_desc1" class="bg-gray-300 p-2 ">
+                <p class="justify-center"><i class="fa-solid fa-truck-fast" style="color: #000000;"></i></p>
+                <h1 class="text-xl font-bold "> Fast and Free shipping </h1>
+                <p> we’re committed to getting them to you in record time. Shop now and experience the convenience of
+                    hassle-free, free shipping on all your favorite items, every time!
+
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--New arrival sample-->
+
+    <section id="newarrival_section" class="mt-5 ml-5">
+        <h1 class=" text-2xl font-bold"> New Arrivals</h1>
+
+        <div id="newarrival_image" class="mt-10 grid grid-cols-2 place-content-stretch  md:grid-cols-4 relative gap-20 ">
+
+            <div id="newarrival_image1" class="relative w-56 h-80 hover:shadow-md">
+                <img class="w-56 h-80 " src="./images/newarrival1.jpg" alt="newarrival1">
+                <a href="/Users/nivimanik/Desktop/Task /Nostra/newarrival.html"><button class="bg-white ml-80 text-yellow-600 p-1 relative bottom-44 right-64 w-24 rounded ">Shop Now
+                    <i class="fa-solid fa-arrow-right" style="color: #D97707; "></i>
+                </button></a>
+
+            </div>
+            <div id="newarrival_image2" class="relative w-56 h-80 hover:shadow-md">
+                <img class="w-56 h-80 " src="./images/newarrival2.jpg" alt="newarrival1">
+                <a href="/Users/nivimanik/Desktop/Task /Nostra/newarrival.html"><button class="bg-white ml-80 text-yellow-600 p-1 relative bottom-44 right-64 w-24 rounded ">Shop Now
+                    <i class="fa-solid fa-arrow-right" style="color: #D97707; "></i>
+                </button></a>
+
+            </div>
+
+            <div id="newarrival_image3" class="relative w-56 h-80 hover:shadow-md">
+                <img class="w-56 h-80" src="./images/newarrival3.jpg" alt="newarrival1">
+                <a href="/Users/nivimanik/Desktop/Task /Nostra/newarrival.html"><button class="bg-white ml-80 text-yellow-600 p-1 relative bottom-44 right-64 w-24 rounded ">Shop Now
+                    <i class="fa-solid fa-arrow-right" style="color: #D97707; "></i>
+                </button></a>
+
+            </div>
+
+            <div id="newarrival_image4" class="relative w-56 h-80 hover:shadow-md">
+                <img class="w-56 h-80" src="./images/newarrival4.jpg" alt="newarrival1">
+                <a href="/Users/nivimanik/Desktop/Task /Nostra/newarrival.html"><button class="bg-white ml-80 text-yellow-600 p-1 relative bottom-44 right-64 w-24 rounded ">Shop Now
+                    <i class="fa-solid fa-arrow-right" style="color: #D97707; "></i>
+                </button></a>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!--Most Wanted-->
+
+
+    <section id="mostwanted_section" class="mt-5 ml-5">
+        <h1 class=" text-2xl font-bold"> Most Wanted</h1>
+
+        <div id="mostwanted_image" class="mt-10 grid grid-cols-2 md:grid-cols-4 relative gap-20 text-center">
+
+            <div id="mostwanted_image1" class="relative w-56 h-80 hover:shadow-md">
+                <a href="/Users/nivimanik/Desktop/Task /Nostra/mostwanted.html"> <img class="w-56 h-80" src="./images/mostwanted1.jpg" alt="mostwanted1"> </a>
+                <button class="bg-white ml-80 text-yellow-600 p-1 relative bottom-14 right-36 w-8 rounded ">
+                    <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                </button>
+                <p class="bg-yellow-600 ml-80 text-white p-1 relative bottom-80 right-80 w-14 rounded animate-bounce">
+                    Sale
+                </p>
+
+            </div>
+            <div id="mostwanted_image1" class="relative w-56 h-80 hover:shadow-md">
+                <a href="/Users/nivimanik/Desktop/Task /Nostra/mostwanted.html"> <img class="w-56 h-80" src="./images/mostwanted2.jpg" alt="mostwanted2"> </a>
+                <button class="bg-white ml-80 text-yellow-600 p-1 relative bottom-14 right-36 w-8 rounded ">
+                    <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                </button>
+                <p class="bg-yellow-600 ml-80 text-white p-1 relative bottom-80 right-80 w-14 rounded animate-bounce ">
+                    Sale
+                </p>
+
+            </div>
+
+            <div id="mostwanted_image1" class="relative w-56 h-80 hover:shadow-md">
+                <a href="/Users/nivimanik/Desktop/Task /Nostra/mostwanted.html"> <img class="w-56 h-80" src="./images/mostwanted.3" alt="mostwanted3"> </a>
+                <button class="bg-white ml-80 text-yellow-600 p-1 relative bottom-14 right-36 w-8 rounded ">
+                    <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                </button>
+                <p class="bg-yellow-600 ml-80 text-white p-1 relative bottom-80 right-80 w-14 rounded animate-bounce">
+                    Sale
+                </p>
+
+            </div>
+            <div id="mostwanted_image1" class="relative w-56 h-80 hover:shadow-md">
+                <a href="/Users/nivimanik/Desktop/Task /Nostra/mostwanted.html"> <img class="w-56 h-80" src="./images/mostwanted4.jpg" alt="mostwanted4"> </a>
+                <button class="bg-white ml-80 text-yellow-600 p-1 relative bottom-14 right-36 w-8 rounded ">
+                    <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                </button>
+                <p class="bg-yellow-600 ml-80 text-white p-1 relative bottom-80 right-80 w-14 rounded animate-bounce">
+                    Sale
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!--poster -->
+
+    <section id="poster_section" class="mt-14">
+
+        <div id="poster_card" class="hidden md:grid-cols-2 ml-5 mr-10 z-10  ">
+
+            <div id="poster_image">
+                <img src="./images/poster1.jpg" alt="poster1">
+
+            </div>
+
+            <div id="poster_text" class="text-center mt-36  text-white font-bold space-y-10">
+
+                <h1 class="text-2xl"> Limited Offer</h1>
+                <h1 class="text-2xl"> 35% OFF on this for the first 30 customers</h1>
+                <button class="bg-white  text-yellow-600 p-1 text-xl "> Shop Now <i class="fa-solid fa-arrow-right"
+                        style="color: #D97707;"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- News Letter-->
+
+    <section id="newsletter_section" class="mt-14 grid justify-center text-center space-y-7">
+        <h1 class=" text-3xl"> Join Our News Letter</h1>
+        <p class="text-xl">Signup for our email newspaper to get exclusive discounts, updates and more</p>
+        <input type="text" class="w-full h-11 border border-black m-2">
+        <button class="bg-black  text-yellow-600 p-1 text-xl w-36 ml-56 "> Subscribe <i class="fa-solid fa-arrow-right"
+                style="color: #D97707;"></i>
+        </button>
+
+    </section>
+
+    <!-- footer-->
+
+    <section id="footer_section" class="mt-14 m-5 text-white">
+
+
+        <div id="footer_container" class="p-5">
+
+            <div id="footer_title" class="space-y-8 text-left">
+                <h1 class="text-2xl md:text-4xl"> <strong> Nostra</strong></h1>
+                <p class="text-sm md:text-lg"> "Step into a World of Style – Explore Our Curated Collection of Dresses for Every
+                    Occasion. Whether
+                    you're preparing for a casual outing, a special event, or just treating yourself to something new,
+                    our
+                    dress selection has something for everyone. With timeless designs, flattering fits, and the latest
+                    trends, you’re sure to find the perfect dress that makes you feel confident, elegant, and ready to
+                    take
+                    on the day. Shop now and embrace the beauty of effortless style."</p>
+            </div>
+            <div id="footer_icon" class="space-x-4 text-xl md:text-3xl mt-5">
+                <i class="fa-brands fa-twitter" style="color: white;"></i>
+                <i class="fa-brands fa-whatsapp" style="color: white;"></i>
+                <i class="fa-brands fa-instagram" style="color: white;"></i>
+                <i class="fa-brands fa-facebook" style="color: white;"></i>
+            </div>
+
+            <div class="mt-5">
+                <p> @ 2025 Nostra.com </p>
+            </div>
+        </div>
+    </section>
+
+
+
+<script>
+
+//from navbar scroll to new arrival section in home page
+const scrolltonewarrival = document.getElementById("scrolltonewarrival")
+scrolltonewarrival.addEventListener("click",function(){
+    document.getElementById("newarrival_section").scrollIntoView({ behavior: "smooth" 
+});
+})
+//from navbar scroll to most wanted section in home page 
+
+const scrolltomostwanted = document.getElementById("scrolltomostwanted")
+scrolltomostwanted.addEventListener("click",function(){
+    document.getElementById("mostwanted_section").scrollIntoView({ behavior: "smooth"});
+})
+
+//from navbar scroll 2 to new arrival section in home page
+const scrolltonewarrival2 = document.getElementById("scrolltonewarrival2")
+scrolltonewarrival2.addEventListener("click",function(){
+    document.getElementById("newarrival_section").scrollIntoView({ behavior: "smooth" 
+});
+})
+//from navbar scroll 2 to most wanted section in home page 
+
+const scrolltomostwanted2 = document.getElementById("scrolltomostwanted2")
+scrolltomostwanted2.addEventListener("click",function(){
+    document.getElementById("mostwanted_section").scrollIntoView({ behavior: "smooth"});
+})
+
+const header=document.getElementById("header")
+const headerbutton= document.getElementById("headerbutton")
+headerbutton.addEventListener("click",function(){
+    header.remove();
+})
+
+const listbutton = document.getElementById("listbutton");
+  const smallscreennav = document.getElementById("smallscreennav");
+  listbutton.addEventListener("click", function () {
+
+    smallscreennav.classList.toggle("hidden")
+   
+  });
+
+//home page button slides
+
+
+    const images = document.querySelectorAll("#adimage img");
+    let index = 0;
+
+    function updateCarousel() {
+        images.forEach((img, i) => {
+            img.classList.add("hidden"); // Hide all images
+        });
+
+        // Show the current three images
+        images[index].classList.remove("hidden");
+        images[(index + 1) % images.length].classList.remove("hidden");
+        images[(index + 2) % images.length].classList.remove("hidden");
+    }
+
+    document.getElementById("nextBtn").addEventListener("click", () => {
+        index = (index + 1) % images.length;
+        updateCarousel();
+    });
+
+    document.getElementById("prevBtn").addEventListener("click", () => {
+        index = (index - 1 + images.length) % images.length;
+        updateCarousel();
+    });
+
+    updateCarousel(); // Initialize on load
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

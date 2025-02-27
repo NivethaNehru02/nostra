@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra - New Arrivals</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+    <link rel="icon" href="./images/icon.jpg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <style>
+        * {
+            font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        * button:hover {
+            opacity: 0.7;
+        }
+
+        #footer_container {
+            background-color: #006D6A;
+        }
+        body, html {
+    overflow-x: hidden; 
+}
+#newarrival_Page img:hover{ opacity: 0.8;}
+
+    </style>
+
+
+
+
+   <!-- Header-->
+     
+   <div id="header" class= "sm:text-sm space-x-2 bg-black text-white  md:text-2xl flex justify-center sticky top-0 z-20">
+    <h1 >Sign up and <strong>Get 20% OFF</strong> for your first order </h1>
+    <button id="headerbutton"class="ml-32 text-md hover:bg-white hover:text-black"> X </button>
+
+</div>
+
+
+ <!-- Navigation bar-->
+ <section id="nav" class="flex justify-between p-5 text-2xl text-gray-700 ">
+
+    <div id="nav1" class="text-md md:text-3xl text-black ">
+        <h1 > <strong> Nostra</strong></h1>
+    </div>
+    <svg id="listbutton" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="w-10 h-10 md:hidden"  fill="currentColor" class="size-4"  >
+        <path d="M3 4.75a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6.25 3a.75.75 0 0 0 0 1.5h7a.75.75 0 0 0 0-1.5h-7ZM6.25 7.25a.75.75 0 0 0 0 1.5h7a.75.75 0 0 0 0-1.5h-7ZM6.25 11.5a.75.75 0 0 0 0 1.5h7a.75.75 0 0 0 0-1.5h-7ZM4 12.25a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM3 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
+    </svg>
+   
+    <div id="smallscreennav" class=" hidden sm:grid grid-flow-row mt-4 text-lg  md:hidden">
+
+        <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/index.html">Home </a></p>
+        <p  class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/newarrival.html">New Arrival </a></p>
+        <p  class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/mostwanted.html">Most Wanted </a></p>
+        <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/collection.html">Collection </a></p>
+        <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/contactpage.html">Contact Us </a></p>
+    </div>
+    
+
+    <div id="nav2" class=" hidden  justify-end gap-14  lg:grid grid-flow-col">
+
+        <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/index.html">Home </a></p>
+        <p id="scrolltonewarrival2"  class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/newarrival.html">New Arrival </a></p>
+        <p id="scrolltomostwanted2" class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/mostwanted.html">Most Wanted </a></p>
+        <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/collection.html">Collection </a></p>
+        <p class=" hover:text-yellow-600"><a href="/Users/nivimanik/Desktop/Task /Nostra/contactpage.html">Contact Us </a></p>
+
+    </div>
+</section>   
+
+
+    <!--New arrival section initiation-->
+    <section id="newarrival_Page" class="grid grid-flow-row-dense md:grid-flow-col-dense ">
+        <!--New arrival section 1 -->
+        <div id="newarrival_section1" class="grid grid-flow-col  md:grid-flow-row mt-5 ml-5 border:none border-r-2 border-black">
+
+            <div id="newarrival_list1" class="grid grid-flow-row">
+                <h1 class="font-bold text-2xl"> Occasion</h1>
+                <p> <input type="checkbox"> <label> Summer</label> </p>
+                <p> <input type="checkbox"> <label> Spring</label> </p>
+                <p> <input type="checkbox"><label> Winter</label> </p>
+                <p> <input type="checkbox"><label> Party</label> </p>
+                <p> <input type="checkbox"> <label> Vacation</label></p>
+
+            </div>
+
+            <div id="newarrival_list2" class="grid grid-flow-row">
+                <h1 class="font-bold text-2xl"> Colors</h1>
+                <p> <input type="checkbox"> <label> Black</label> </p>
+                <p> <input type="checkbox"> <label> White</label> </p>
+                <p> <input type="checkbox"><label> Green</label> </p>
+                <p> <input type="checkbox"><label> Blue</label> </p>
+                <p> <input type="checkbox"> <label> Red</label></p>
+
+            </div>
+
+            <div id="newarrival_list3" class="grid grid-flow-row">
+                <h1 class="font-bold text-2xl"> Price</h1>
+                <p> <input type="checkbox"> <label> Below £150 </label> </p>
+                <p> <input type="checkbox"> <label> From £151 to £250 </label> </p>
+                <p> <input type="checkbox"><label> From £251 to £350 </label> </p>
+                <p> <input type="checkbox"><label> Above £500 </label> </p>
+                <p> <input type="checkbox"> <label> Above £1000 </label></p>
+
+            </div>
+
+
+
+        </div>
+
+        <!--New Arrivals section 2-->
+
+        <div id="newarrival_section2" class="mt-5 mr-14 text-center font-bold p-5">
+            <div id="newarrival_search">
+                <h1 class="ml-14 md:text-xl border border-black text-left mr-14 grid grid-flow-col items-center p-2 relative">
+                    <input class="w-full pr-12 focus:outline-none focus:ring-0 focus:border-transparent" type="text" placeholder="Search here">
+                    <i class="fa-solid fa-magnifying-glass absolute right-3 text-black"></i>
+                </h1>
+                
+    
+            </div>
+            <div id="newarrival_container" class="md:grid grid-flow-row justify-center m-2 space-y-14">
+                <!--first four images-->
+                <div id="newarrival_image" class="grid grid-cols-2  md:grid-cols-4 mt-10 relative gap-20">
+
+                    <div id="newarrival_image1" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival1.jpg" alt="newarrival1">
+                        <p> Black Satin Gown</p>
+                        <p> £540</p>
+
+                    </div>
+                    <div id="newarrival_image2" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival2.jpg" alt="newarrival2">
+                        <p> Blue Party Gown</p>
+                        <p> £840</p>
+
+                    </div>
+
+                    <div id="newarrival_image3" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival3.jpg" alt="newarrival3">
+                        <p> Green Elite dress</p>
+                        <p> £150</p>
+
+                    </div>
+
+                    <div id="newarrival_image4" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival4.jpg" alt="newarrival4">
+                        <p> Black Satin dress</p>
+                        <p> £240</p>
+
+                    </div>
+
+                </div>
+
+                <!--second four-->
+
+                <div id="newarrival_image_2" class="mt-10 grid grid-cols-2 md:grid-cols-4 relative gap-20">
+
+                    <div id="newarrival_image5" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival5.jpg" alt="newarrival5">
+                        <p> White Summer dress</p>
+                        <p> £140</p>
+
+                    </div>
+                    <div id="newarrival_image6" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival6.jpg" alt="newarrival6">
+                        <p> Summer Blue Maxi</p>
+                        <p> £740</p>
+
+                    </div>
+
+                    <div id="newarrival_image7" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival7.jpg" alt="newarrival7">
+                        <p> Blue Floral dress</p>
+                        <p> £250</p>
+
+                    </div>
+
+                    <div id="newarrival_image8" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival8.jpg" alt="newarrival8">
+                        <p> Pink Satin Spring</p>
+                        <p> £899</p>
+
+                    </div>
+
+                </div>
+                <!-- third row -->
+                <div id="newarrival_image_3" class="mt-10 grid grid-cols-2 md:grid-cols-4 relative gap-20">
+
+                    <div id="newarrival_image9" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival9.jpg" alt="newarrival9">
+                        <p> Pink Party Gown</p>
+                        <p> £999</p>
+
+                    </div>
+                    <div id="newarrival_image10" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival10.jpg" alt="newarrival10">
+                        <p> Blue casual wear</p>
+                        <p> £205 </p>
+
+                    </div>
+
+                    <div id="newarrival_image11" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival11.jpg" alt="newarrival11">
+                        <p> Beige suite</p>
+                        <p> £650</p>
+
+                    </div>
+
+                    <div id="newarrival_image12" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival12.jpg" alt="newarrival12">
+                        <p> Red Summer Combo</p>
+                        <p> £240</p>
+
+                    </div>
+
+                </div>
+                <!-- fourth row -->
+                <div id="newarrival_image_4" class="mt-10 grid  grid-cols-2 md:grid-cols-4 relative gap-20">
+
+                    <div id="newarrival_image13" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival13.jpg" alt="newarrival13">
+                        <p> Black vacation</p>
+                        <p> £740</p>
+
+                    </div>
+                    <div id="newarrival_image14" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival14.jpg" alt="newarrival14">
+                        <p> Green Winter top</p>
+                        <p> £840</p>
+
+                    </div>
+
+                    <div id="newarrival_image15" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival15.jpg" alt="newarrival15">
+                        <p> Red Elite party</p>
+                        <p> £550</p>
+
+                    </div>
+
+                    <div id="newarrival_image16" class="relative w-56 h-80">
+                        <img class="w-56 h-80" src="./images/newarrival16.jpg" alt="newarrival16">
+                        <p> Green Winter set</p>
+                        <p> £140</p>
+
+                    </div>
+
+                </div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- footer-->
+
+    <section id="footer_section" class=" mt-14 m-5 text-white">
+
+
+        <div id="footer_container" class="p-5">
+
+            <div id="footer_title" class="space-y-8 text-left">
+                <h1 class="text-4xl"> <strong> Nostra</strong></h1>
+                <p class="hidden md:grid text-lg"> "Step into a World of Style – Explore Our Curated Collection of Dresses for Every
+                    Occasion. Whether
+                    you're preparing for a casual outing, a special event, or just treating yourself to something new,
+                    our
+                    dress selection has something for everyone. With timeless designs, flattering fits, and the latest
+                    trends, you’re sure to find the perfect dress that makes you feel confident, elegant, and ready to
+                    take
+                    on the day. Shop now and embrace the beauty of effortless style."</p>
+            </div>
+            <div id="footer_icon" class="space-x-4 text-3xl mt-5">
+                <i class="fa-brands fa-twitter" style="color: white;"></i>
+                <i class="fa-brands fa-whatsapp" style="color: white;"></i>
+                <i class="fa-brands fa-instagram" style="color: white;"></i>
+                <i class="fa-brands fa-facebook" style="color: white;"></i>
+            </div>
+
+            <div class="mt-5">
+                <p> @ 2025 Nostra.com </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+      
+        
+        const header=document.getElementById("header")
+        const headerbutton= document.getElementById("headerbutton")
+        headerbutton.addEventListener("click",function(){
+            header.remove();
+        })
+        
+        const listbutton = document.getElementById("listbutton");
+  const smallscreennav = document.getElementById("smallscreennav");
+  listbutton.addEventListener("click", function () {
+
+    smallscreennav.classList.toggle("hidden")
+   
+  });
+
+        
+        
+        
+        </script>
+</body>
+
+</html>
